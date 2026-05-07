@@ -168,10 +168,10 @@ while cap.isOpened():
     # UI
 
     if face_inside:
-        text = "Perfect - press SPACE"
+        text = "Perfect - press SPACE to photo"
         color = (0, 255, 0)
     else:
-        text = "Align face with the oval"
+        text = "Align the face with the area"
         color = (0, 0, 255)
         
     cv2.imshow("Face Capture", output)
