@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Face Validation</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="card">
+
+        <h1>
+            Проверка фотографии
+        </h1>
+
+        <p class="subtitle">
+            Загрузите фотографию лица для регистрации
+        </p>
+
+        <div class="buttons">
+
+            <label class="upload-btn">
+
+                Выберите файл
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept="image/*"
+                    hidden
+                >
+
+            </label>
+
+            <button id="cameraBtn">
+                Сделать фото
+            </button>
+
+        </div>
+
+        <div class="preview-container">
+
+            <img
+                id="preview"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+        <div id="result"></div>
+
+        <div class="rules">
+
+            <h3>
+                Требования
+            </h3>
+
+            <ul>
+                <li>Одно лицо в кадре</li>
+                <li>Лицо полностью видно</li>
+                <li>Без маски</li>
+                <li>Без солнцезащитных очков</li>
+                <li>Хорошее освещение</li>
+                <li>Без сильного наклона головы</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
